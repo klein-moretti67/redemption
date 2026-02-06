@@ -44,8 +44,7 @@ jobs:
       with:
         nuitka-version: main
         script-name: phoenix/main.py
-        onefile: true
-        standalone: true
+        mode: onefile
         include-data-dir: phoenix/assets=assets
         output-file: ${{ matrix.executable_name }}
 
