@@ -77,7 +77,8 @@ class CheatConsole:
         # Handle text input
         key = rl.get_char_pressed()
         while key > 0:
-            if 32 <= key <= 126 and len(self.input_text) < self.max_length:
+            # Ignore backtick (`) which might be used to toggle console
+            if key != 96 and 32 <= key <= 126 and len(self.input_text) < self.max_length:
                 self.input_text += chr(key)
             key = rl.get_char_pressed()
             
