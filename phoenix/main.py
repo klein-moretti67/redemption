@@ -140,6 +140,14 @@ def main():
         console.draw()
         pause_menu.draw()
         
+        # Coordinate System Display (Top Right)
+        if not console.is_open:
+            pos = active_player.position
+            coord_text = f"X: {pos.x:.1f}  Y: {pos.y:.1f}  Z: {pos.z:.1f}"
+            font_size = 20
+            text_width = rl.measure_text(coord_text, font_size)
+            rl.draw_text(coord_text, SCREEN_WIDTH - text_width - 20, 10, font_size, rl.BLACK)
+        
         rl.draw_fps(10, SCREEN_HEIGHT - 25)
         rl.end_drawing()
         
