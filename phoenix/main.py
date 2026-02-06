@@ -37,6 +37,7 @@ def main():
     SCREEN_HEIGHT = 720
     
     rl.init_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Phoenix - Pre-Alpha")
+    rl.set_exit_key(0)  # Disable default ESC exit to allow pause menu
     rl.set_target_fps(60)
     
     # Initialize systems

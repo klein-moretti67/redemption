@@ -25,7 +25,18 @@ Phoenix is an open-world action RPG inspired by the classic top-down style of GT
 | **Cheat Console** | `~` (Grave / Tilde) |
 | **Console Submit** | `Enter` |
 
-## 🚀 Installation & Usage
+## �️ Cheat Codes
+
+Access the console by pressing `~` (Grave/Tilde).
+
+| Command | Description | Example |
+| :--- | :--- | :--- |
+| `KIG_ME_OUT x y z` | Teleport to coordinates | `KIG_ME_OUT 0 5 0` |
+| `GIVE_CAR` | Spawn a vehicle near you | `GIVE_CAR` |
+| `GOD_MODE` | Toggle invincibility | `GOD_MODE` |
+| `HELP` | List available commands | `HELP` |
+
+## �🚀 Installation & Usage
 
 ### Prerequisites
 
@@ -115,5 +126,4 @@ The project features a GitHub Actions pipeline that:
 5.  Open a Pull Request.
 
 ---
-*Developed by klein-moretti67 and Antigravity*
-REQUIRES RAYLIB INSTALLED ON YOUR SYSTEM.
+*Remade by klein-moretti67 with help from Antigravity*
